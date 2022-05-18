@@ -1,7 +1,7 @@
 package com.skillrary;
 
 /**
- * Hello world!
+ * Hello!
  *
  */
 public class App 
