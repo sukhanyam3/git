@@ -1,0 +1,16 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage ('git') {
+            steps {
+            git 'https://github.com/sukhanyam3/git.git'
+        }
+        }
+        stage ('build') {
+            steps {
+                bat "mvn clean package"
+            }
+        }
+    }
+}
